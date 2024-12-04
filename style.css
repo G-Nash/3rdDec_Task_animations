@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+    color: white;
+
+    background-image: url(./pexels-brett-sayles-3110354.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: repeat;
+
+    animation-name: bg_animations;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: both; */
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.scene{
+    margin-left: auto;
+    margin-right: auto;
+    height: 97vh;
+    width: 97vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+
+    /* background-image: url(./astroid_nobg.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+
+    animation-name: astd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.rocket_div{
+    height: 20%;
+    /* border: solid; */
+    position: relative;
+}
+
+.rocket_png,.rocket_png2, .rocket_png3{
+    max-height: 100%;
+    margin: 0px;
+    /* margin-top: 20%; */
+    animation-name: rocket_lanch;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function:linear;
+
+    position: relative;
+}
+
+.rocket_png2{
+    animation-delay: 3s;
+}
+
+.rocket_png3{
+    animation-delay: 5s;
+}
+
+/* #astd{
+    animation-name:astd;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} */
+
+
+
+@keyframes rocket_lanch {
+    from{
+        transform: translateY(0vh);
+    }
+
+    to{
+        transform: translateY(-100vh);
+
+    }
+}
+
+@keyframes bg_animations{
+    from{
+        background-position-y: 400%;
+    }
+
+    to{
+        background-position-y: 0%;
+    }
+}
+
+@keyframes astd{
+    from{
+        /* transform: translateY(100vh); */
+        /* transform: translateX(100vw); */
+        background-position-y: 0%;
+    }
+
+    to{
+        /* transform: translateY(0vh); */
+        /* transform: translateX(0vw); */
+        background-position-y: 100%;
+    }
+}
+
+#cbx
