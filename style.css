@@ -3,7 +3,7 @@ body{
     color: white;
 
     background-image: url(./pexels-brett-sayles-3110354.jpg);
-    background-position: center;
+    background-position: 0px 0px;
     background-size:cover;
     background-repeat: repeat;
 
@@ -88,7 +88,7 @@ body{
     }
 
     to{
-        background-position-y: 0%;
+        background-position-y: -100%;
     }
 }
 
